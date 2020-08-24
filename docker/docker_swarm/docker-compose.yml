@@ -35,7 +35,7 @@ services:
     environment:
         - MYSQL_URL=jdbc:mysql://mysql:${DB_PORT}/petclinic  
         - MYSQL_USER=${MYSQL_USER} 
-        - MYSQL_PAS=${DB_PASS} 
+        - MYSQL_PASS=${DB_PASS} 
     deploy:
       replicas: 2
       update_config:
