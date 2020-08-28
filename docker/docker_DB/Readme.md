@@ -1,4 +1,4 @@
-================== RUN CONTAINER =====================
+#                    RUN CONTAINER 
 
  **** By default MYSQL_USER=$DB_USER, MYSQL_DATABASE=$DB_NAME
 
