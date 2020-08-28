@@ -1,13 +1,10 @@
-====================== BUILD ===========================
-
+#                         BUILD
 DOCKER_BUILDKIT=1 docker build  -t name:tag -f docker/docker_APP/Dockerfile $GIT_URL#$build_branch
 
-============== BUILD RESERVE DOCKERFILE ================
-
+#                  BUILD RESERVE DOCKERFILE 
 docker build -t name:tag --build-arg URL=$GIT_URL . 
 
-================== RUN CONTAINER =======================
-
+#                       RUN CONTAINER 
 docker run -d -p 8080:8080 \
 -e DB_HOST=$IP_DB \
 -e DB_PORT=$DB_PORT \
